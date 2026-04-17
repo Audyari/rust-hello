@@ -5,8 +5,7 @@ fn sapa(nama: &str) -> String {
 fn main() {
     println!("🦀 Hello World dari Rust!");
     println!("Belajar Rust bareng AI — let's go!");
-    println!("Semoga lancar jaya!");
-    println!("{}", sapa("World"));
+    println!("{}", sapa("Audyari"));
 }
 
 #[cfg(test)]
@@ -25,11 +24,11 @@ mod tests {
 
     #[test]
     fn test_sapa_tidak_kosong() {
-        assert!(!sapa("Rust").is_empty());
+        assert!(!sapa("Rust").is_empty()); // bisa jelaskan ini apa
     }
 
     #[test]
     fn test_sapa_mengandung_nama() {
-        assert!(sapa("Budi").contains("Budi"));
+        assert!(sapa("Budi").contains("Budi")); // bisa jelaskan ini apa
     }
 }
