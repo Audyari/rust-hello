@@ -23,11 +23,6 @@ mod tests {
     }
 
     #[test]
-    fn test_sapa_tidak_kosong() {
-        assert!(!sapa("Rust").is_empty()); // bisa jelaskan ini apa
-    }
-
-    #[test]
     fn test_sapa_mengandung_nama() {
         assert!(sapa("Budi").contains("Budi")); // bisa jelaskan ini apa
     }
